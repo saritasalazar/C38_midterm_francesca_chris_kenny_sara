@@ -3,6 +3,7 @@ import { AppContextProvider } from './context/AppContext';
 import ContextDemo from './components/ContextDemo';
 
 import './App.css';
+import Menulist from './components/Menulist';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
@@ -16,11 +17,13 @@ const App = () => {
   useEffect(fetchDemoData, []);
 
   return (
+    
     <AppContextProvider>
       <div id="demo">
-        <h3>Hello from client/src/App.js</h3>
+        <Menulist />
+        {/* <h3>Hello from client/src/App.js</h3>
         <ContextDemo />
-        <h3>{serverMessage}</h3>
+        <h3>{serverMessage}</h3> */}
       </div>
     </AppContextProvider>
   );
