@@ -12,7 +12,7 @@ const Menulist = () => {
         <Container>
             <Switch>
                 <Route path = "/AboutUs" component = {AboutUs}/>
-                {/* <Route path = "/" component = {SearchDrinks}/> */}
+                <Route path = "/" component = {SearchDrinks}/>
             </Switch>
             
         </Container>
