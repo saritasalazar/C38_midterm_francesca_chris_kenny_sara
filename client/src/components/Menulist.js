@@ -10,16 +10,12 @@ const [search, setSearch] = React.useState("Cocktail")
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    // console.log("im here!");
-    // console.log
     setSearch(event.target.elements.searchbar.value);
 }
 
 React.useEffect(() => {
     axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
     .then((response) => {
-        console.log(response.data.drinks)
-        console.log(response.data)
         setApiData(response.data.drinks)
     })
 },[search])
