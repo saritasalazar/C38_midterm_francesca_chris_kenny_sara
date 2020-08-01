@@ -4,10 +4,12 @@ import SearchDrinks from './SearchDrinks';
 import NavBar from './NavBar'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from './AboutUs'
+import "./Menulist.css"
 
 const Menulist = () => {
     return (
-    <Router>
+        <div >
+            <Router>
         <NavBar />
         <Container>
             <Switch>
@@ -17,6 +19,8 @@ const Menulist = () => {
             
         </Container>
     </Router>
+        </div>
+    
     );
 };
 export default Menulist;
