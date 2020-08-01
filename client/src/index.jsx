@@ -3,4 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+import Menulist from './components/Menulist';
+
+
+
+ReactDOM.render(
+    <React.StrictMode>
+      <Menulist />
+    </React.StrictMode>,
+    document.getElementById("root")
+  );
+
+  
