@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form } from "react-bootstrap";
+import { Form, Row} from "react-bootstrap";
 import axios from "axios";
 import AllRecipes from './AllRecipes'; 
 
@@ -32,7 +32,7 @@ const SearchDrinks = () => {
                 ></Form.Control>
             </Form.Row>
         </Form>
-        <AllRecipes data={apiData}></AllRecipes>
+        <AllRecipes data={apiData} />       
         </>
     );
 };

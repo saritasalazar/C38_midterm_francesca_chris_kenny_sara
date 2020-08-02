@@ -12,13 +12,13 @@ const NavBar = () => {
 
             <Nav.Item as ="li">
                 <Nav.Link style={{ color: "#fff" }} href="/random" eventKey="link-1">
-                    <strong>Drink of the Day</strong>
+                    Drink of the Day
                 </Nav.Link>
             </Nav.Item>
 
             <Nav.Item as ="li">
                 <Nav.Link style={{ color: "#fff" }} href="/AboutUs" eventKey="link-2">
-                    <strong>About Us</strong>
+                    About Us
                 </Nav.Link>
             </Nav.Item>
         </Nav>

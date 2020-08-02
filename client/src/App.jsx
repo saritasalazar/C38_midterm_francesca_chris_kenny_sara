@@ -20,7 +20,7 @@ const App = () => {
     
     <AppContextProvider>
       <div id="demo">
-        <Menulist />
+        
         {/* <h3>Hello from client/src/App.js</h3>
         <ContextDemo />
         <h3>{serverMessage}</h3> */}
