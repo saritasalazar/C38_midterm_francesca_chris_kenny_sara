@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import "./Menulist.css"
 
 const AllRecipes = ({data}) => {
 
@@ -9,7 +10,8 @@ const AllRecipes = ({data}) => {
             {data ?
                 data.map((drinks) => {
                     return (
-                        <Card variant="top"
+                        <div id = "Card">
+                            <Card variant="top"
                             key={drinks.idDrink}
                             sstyle={{ width: 200, margin: 5 }}
                         >
@@ -23,6 +25,8 @@ const AllRecipes = ({data}) => {
                                 <Card.Title>{drinks.strDrink}</Card.Title>
                             </Card.Body>
                         </Card>
+                        </div>
+                        
                     )
                 })
                 : "Nothing found "}
