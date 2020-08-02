@@ -1,0 +1,47 @@
+.randomBox {
+    display: flex;
+    
+    }
+    #drinkname{
+        padding-left:105px;
+         font-weight: bold;
+         color: black;
+    }
+    
+    #randomdrink{
+        width:500px;
+        height:500px;
+        padding-left: 100px;
+        padding-right: 40px;
+     
+    }
+    
+    
+    #recipe{
+        width: 80%;
+        flex:display;
+    }
+    
+    button{
+        background-color:aquamarine;
+        color:white;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 25px;
+        transition-duration: 0.4s;
+        outline: none;
+       
+    
+        
+    }
+
+  button:hover{
+        background-color: pink;
+    
+    }
+
+    #bookmarkbutton{
+        float: right; 
+    }
+    
+    

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { AppContextProvider } from './context/AppContext';
-import ContextDemo from './components/ContextDemo';
-
+import RandomDrink from './components/RandomDrink'
+import ButtonRandom from './components/ButtonRandom';
 import './App.css';
 import Menulist from './components/Menulist';
+import { Button } from 'react-bootstrap';
 
 const App = () => {
   const [serverMessage, setServerMessage] = useState('');
@@ -21,6 +22,7 @@ const App = () => {
     <AppContextProvider>
       <div id="demo">
         <Menulist />
+        <ButtonRandom />
         {/* <h3>Hello from client/src/App.js</h3>
         <ContextDemo />
         <h3>{serverMessage}</h3> */}
