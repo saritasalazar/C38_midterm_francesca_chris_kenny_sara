@@ -7,6 +7,7 @@ const Drink = () => {
   const [apiData, setApiData] = useState({});
 
   let { id } = useParams();
+  console.log(id);
 
   useEffect(() => {
     console.log('I entered useEffect. Did it work?');
@@ -20,7 +21,7 @@ const Drink = () => {
 
   return (
     <Container>
-      <h1>Drink of the Day</h1>
+      <h1>Drink Page</h1>
       <h2>{apiData.strDrink}</h2>
       <img
         alt="Placeholder"

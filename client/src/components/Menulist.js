@@ -13,10 +13,10 @@ const Menulist = () => {
       <NavBar />
       <Container>
         <Switch>
-          <Route path="/DrinkOfTheDay" component={DrinkOfTheDay} />
-          <Route path="/AboutUs" component={AboutUs} />
-          <Route path="/" component={SearchDrinks} />
-          <Route path="/drink/:id" component={Drink} />
+          <Route exact path="/DrinkOfTheDay" component={DrinkOfTheDay} />
+          <Route exact path="/AboutUs" component={AboutUs} />
+          <Route exact path="/" component={SearchDrinks} />
+          <Route exact path="/drink/:id" component={Drink} />
         </Switch>
       </Container>
     </Router>
