@@ -22,4 +22,5 @@ const Menulist = () => {
     </Router>
   );
 };
+
 export default Menulist;

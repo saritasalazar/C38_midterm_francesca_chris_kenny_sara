@@ -2,3 +2,9 @@
   display: flex;
   justify-content: center;
 }
+#Card {
+  display: flex;
+}
+body {
+  margin: 0;
+}
