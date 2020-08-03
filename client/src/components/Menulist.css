@@ -1,8 +1,10 @@
-#Card{
-  display:flex;
-  
-  
+#searchbar {
+  display: flex;
+  justify-content: center;
 }
-body{
+#Card {
+  display: flex;
+}
+body {
   margin: 0;
 }
