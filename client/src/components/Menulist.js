@@ -6,11 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import DrinkOfTheDay from './DrinkOfTheDay';
 import Drink from './Drink';
+import Footer from './Footer';
 
 const Menulist = () => {
   return (
     <Router>
       <NavBar />
+      <br />
       <Container>
         <Switch>
           <Route exact path="/DrinkOfTheDay" component={DrinkOfTheDay} />
@@ -19,8 +21,10 @@ const Menulist = () => {
           <Route exact path="/drink/:id" component={Drink} />
         </Switch>
       </Container>
+      <div>
+        <Footer />
+      </div>
     </Router>
   );
 };
-
 export default Menulist;

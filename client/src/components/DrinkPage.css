@@ -1,0 +1,46 @@
+/* main container */
+
+.randomBox {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+.title {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Drink title/name */
+.drinkname {
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+/* style the image */
+.randomdrink {
+  width: 400px;
+  height: 450px;
+  margin-left: 20px;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+/*style recipe card*/
+.recipe {
+  width: 75%;
+  height: 450px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner {
+  width: 1000px;
+}
