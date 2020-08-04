@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
   return (
-    <Nav style={{ backgroundColor: 'tomato' }} defaultActiveKey="/home" as="ul">
+    <Nav style={{ backgroundColor: 'royalblue' }} defaultActiveKey="/home" as="ul">
       <Nav.Item as="li">
         <Nav.Link style={{ color: '#fff' }} href="/">
           <strong>Home</strong>
@@ -11,10 +11,7 @@ const NavBar = () => {
       </Nav.Item>
 
       <Nav.Item as="li">
-        <Nav.Link
-          style={{ color: '#fff' }}
-          href="/DrinkOfTheDay"
-          eventKey="link-1"
+        <Nav.Link style={{ color: '#fff' }} href="/DrinkOfTheDay" eventKey="link-1"
         >
           <strong>Drink of the Day</strong>
         </Nav.Link>
@@ -23,6 +20,12 @@ const NavBar = () => {
       <Nav.Item as="li">
         <Nav.Link style={{ color: '#fff' }} href="/AboutUs" eventKey="link-2">
           <strong>About Us</strong>
+        </Nav.Link>
+      </Nav.Item>
+
+      <Nav.Item as="li">
+        <Nav.Link style={{ color: '#fff' }} href="/NonAlcoholic" eventKey="link-3">
+          <strong>Non-Alcoholic</strong>
         </Nav.Link>
       </Nav.Item>
     </Nav>
