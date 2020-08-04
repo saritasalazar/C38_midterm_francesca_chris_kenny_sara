@@ -2,47 +2,65 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import './DrinkPage.css';
 
 const Drink = () => {
-  const [apiData, setApiData] = useState({});
+  const [drinks, setDrinks] = useState({});
 
   let { id } = useParams();
   console.log(id);
 
   useEffect(() => {
-    console.log('I entered useEffect. Did it work?');
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
       .then((response) => {
         console.log(response.data.drinks[0]);
-        setApiData(response.data.drinks[0]);
+        setDrinks(response.data.drinks[0]);
       });
   }, []);
 
   return (
     <Container>
-      <h1>Drink Page</h1>
-      <h2>{apiData.strDrink}</h2>
-      <img
-        alt="Placeholder"
-        style={{ float: 'left', width: 300, marginBottom: 20, marginRight: 20 }}
-        src={apiData.strDrinkThumb}
-      />
-      <h4>Instructions:</h4>
-      <p>{apiData.strInstructions}</p>
-      <h4>Ingredients:</h4>
-      <p>{apiData.strIngredient1}</p>
-      <p>{apiData.strIngredient2}</p>
-      <p>{apiData.strIngredient3}</p>
-      <p>{apiData.strIngredient4}</p>
-      <p>{apiData.strIngredient5}</p>
-      <p>{apiData.strIngredient6}</p>
-      <p>{apiData.strIngredient7}</p>
-      <h4>Measurements:</h4>
-      <p>{apiData.strMeasure1}</p>
-      <p>{apiData.strMeasure2}</p>
-      <p>{apiData.strMeasure3}</p>
-      <p>{apiData.strMeasure4}</p>
+      <div class="randombox">
+        <h2 class="drinkname">{drinks.strDrink}</h2>
+        <img
+          class="randomdrink"
+          alt={drinks.strDrink}
+          style={{
+            float: 'left',
+            width: 300,
+            marginBottom: 20,
+            marginRight: 20
+          }}
+          src={drinks.strDrinkThumb}
+        />
+
+        <div class="recipe">
+          <h4>Recipe:</h4>
+          <p>{drinks.strInstructions}</p>
+          <p>
+            {drinks.strMeasure1} {drinks.strIngredient1}
+          </p>
+          <p>
+            {drinks.strMeasure2} {drinks.strIngredient2}
+          </p>
+          <p>
+            {drinks.strMeasure3} {drinks.strIngredient3}
+          </p>
+          <p>
+            {drinks.strMeasure4} {drinks.strIngredient4}
+          </p>
+          <p>
+            {drinks.strMeasure5} {drinks.strIngredient5}
+          </p>
+          <p>
+            {drinks.strMeasure6} {drinks.strIngredient6}
+          </p>
+          <p>
+            {drinks.strMeasure7} {drinks.strIngredient7}
+          </p>
+        </div>
+      </div>
     </Container>
   );
 };

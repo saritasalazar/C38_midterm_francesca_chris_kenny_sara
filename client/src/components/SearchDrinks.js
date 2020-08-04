@@ -2,6 +2,9 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import axios from 'axios';
 import AllRecipes from './AllRecipes';
+import RandomHomePageButton from './RandomHomePageButton';
+
+
 const SearchDrinks = () => {
   const [apiData, setApiData] = React.useState([]);
   const [search, setSearch] = React.useState('Cocktail');
@@ -21,6 +24,7 @@ const SearchDrinks = () => {
   
   return (
     <>
+    <RandomHomePageButton />
       <Form onSubmit={handleSubmit}>
         <Form.Row>
           <Form.Control
