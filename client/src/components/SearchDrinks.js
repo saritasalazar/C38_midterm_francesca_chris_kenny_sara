@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import axios from 'axios';
 import AllRecipes from './AllRecipes';
 import RandomHomePageButton from './RandomHomePageButton';
+import { trackPromise } from 'react-promise-tracker';
 
 
 const SearchDrinks = () => {
@@ -15,11 +16,12 @@ const SearchDrinks = () => {
   };
 
   React.useEffect(() => {
+    trackPromise(
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
       .then((response) => {
         setApiData(response.data.drinks);
-      });
+      }));
   }, [search]);
   
   return (

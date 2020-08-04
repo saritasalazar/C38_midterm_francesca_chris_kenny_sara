@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './DrinkPage.css';
+import { trackPromise } from 'react-promise-tracker';
 
 const Drink = () => {
   const [drinks, setDrinks] = useState({});
@@ -11,12 +12,13 @@ const Drink = () => {
   console.log(id);
 
   useEffect(() => {
+    trackPromise(
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`)
       .then((response) => {
         console.log(response.data.drinks[0]);
         setDrinks(response.data.drinks[0]);
-      });
+      }));
   }, []);
 
   return (

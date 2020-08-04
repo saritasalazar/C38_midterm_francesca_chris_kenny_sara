@@ -2,17 +2,19 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import axios from 'axios';
 import './DrinkPage.css';
+import { trackPromise } from 'react-promise-tracker';
 
 const DrinkOfTheDay = () => {
   const [drinks, setDrinks] = useState({});
 
   useEffect(() => {
+    trackPromise(
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
       .then((response) => {
         console.log(response.data.drinks[0]);
         setDrinks(response.data.drinks[0]);
-      });
+      }));
   }, []);
 
   return (
