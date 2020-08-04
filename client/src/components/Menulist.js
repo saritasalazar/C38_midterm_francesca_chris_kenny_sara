@@ -16,9 +16,12 @@ const Menulist = () => {
         <Switch>
           <Route exact path="/DrinkOfTheDay" component={DrinkOfTheDay} />
           <Route exact path="/AboutUs" component={AboutUs} />
-          <Route exact path="/" component={SearchDrinks} />
+          <Route exact path="/" component={SearchDrinks} />         
+          <Route exact path="/drink/:id" component={Drink} />
+
+
           <Route exact path="/NonAlcoholic" component={NonAlcoholic} />
-          <Route exact path="/drink/:id" component={Drink} />          
+
         </Switch>
       </Container>
     </Router>
