@@ -11,7 +11,7 @@ const NavBar = () => {
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item as="li">
+      <Nav.Item as="li">    
         <Nav.Link
           style={{ color: '#black' }}
           href="/DrinkOfTheDay"
@@ -24,6 +24,12 @@ const NavBar = () => {
       <Nav.Item as="li">
         <Nav.Link style={{ color: '#black' }} href="/AboutUs" eventKey="link-2">
           <strong>About Us</strong>
+        </Nav.Link>
+      </Nav.Item>
+
+      <Nav.Item as="li">
+        <Nav.Link style={{ color: '#black' }} href="/NonAlcoholic" eventKey="link-3">
+          <strong>Virgin Drinks</strong>
         </Nav.Link>
       </Nav.Item>
     </Nav>

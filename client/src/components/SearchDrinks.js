@@ -8,10 +8,12 @@ import RandomHomePageButton from './RandomHomePageButton';
 const SearchDrinks = () => {
   const [apiData, setApiData] = React.useState([]);
   const [search, setSearch] = React.useState('Cocktail');
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setSearch(event.target.elements.searchbar.value);
   };
+
   React.useEffect(() => {
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${search}`)
@@ -19,6 +21,7 @@ const SearchDrinks = () => {
         setApiData(response.data.drinks);
       });
   }, [search]);
+  
   return (
     <>
     <RandomHomePageButton />

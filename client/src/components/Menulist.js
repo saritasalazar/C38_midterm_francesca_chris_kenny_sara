@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import SearchDrinks from './SearchDrinks';
 import NavBar from './NavBar';
+import NonAlcoholic from './NonAlcoholic';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AboutUs from './AboutUs';
 import DrinkOfTheDay from './DrinkOfTheDay';
@@ -21,9 +22,12 @@ const Menulist = () => {
           <Route exact path = "/random" component={ButtonRandom}/> 
           <Route exact path="/DrinkOfTheDay" component={DrinkOfTheDay} />
           <Route exact path="/AboutUs" component={AboutUs} />
-          <Route exact path="/" component={SearchDrinks} />
+          <Route exact path="/" component={SearchDrinks} />         
           <Route exact path="/drink/:id" component={Drink} />
           <Route path = "/ButtonRandom" component={ButtonRandom}/>
+          <Route exact path="/NonAlcoholic" component={NonAlcoholic} />
+
+
         </Switch>
       </Container>
       <div>
