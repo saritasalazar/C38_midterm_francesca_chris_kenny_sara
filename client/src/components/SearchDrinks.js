@@ -5,8 +5,6 @@ import AllRecipes from './AllRecipes';
 import RandomHomePageButton from './RandomHomePageButton';
 
 
-
-
 const SearchDrinks = () => {
   const [apiData, setApiData] = React.useState([]);
   const [search, setSearch] = React.useState('Cocktail');
