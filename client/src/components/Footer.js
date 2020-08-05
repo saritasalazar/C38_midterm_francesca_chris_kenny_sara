@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import Logo from './Logo.png';
-
 const Footer = () => {
   return (
     <div className="main-footer">
@@ -9,9 +8,11 @@ const Footer = () => {
         <div className="row">
           {}
           <div className="col">
-            <img className="logo" width="150px" src={Logo} />
+            <a href={`/`}>
+              <img className="logo" width="150px" src={Logo} />{' '}
+            </a>
             <p>
-              <em> Let’s get litty with the right ingredients</em>{' '}
+              <em> Let's get litty with the right ingredients</em>{' '}
             </p>
             <ul className="list-unstyled"></ul>
             <li></li>
@@ -25,7 +26,7 @@ const Footer = () => {
             <a href={`/DrinkOfTheDay`}>
               <li>Cocktail of the Day</li>
             </a>
-            <a href={`/DrinkOfTheDay`}>
+            <a href={`/NonAlcoholic`}>
               <li href="/">Virgin Drinks</li>
             </a>
             <a href={`/AboutUs`}>
@@ -36,18 +37,23 @@ const Footer = () => {
           <div className="col">
             <h4>Follow us</h4>
             <ul className="list-unstyled"></ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
+            <a href="https://www.facebook.com/wyncode/">
+              <li>Facebook</li>
+            </a>
+            <a href="www.instagram.com/wyncode">
+              <li>Instagram</li>
+            </a>
+            <a href="https://twitter.com/wyncode">
+              <li>Twitter</li>
+            </a>
           </div>
         </div>
         <br />
       </div>
       <div class="bottomtext">
-        COPY RIGHT | TERMS OF CONDITION |PRIVACY POLICY | GET YOUR DRINK ON
+        COPY RIGHT | TERMS OF CONDITION | PRIVACY POLICY | GET YOUR DRINK ON
       </div>
     </div>
   );
 };
-
 export default Footer;
