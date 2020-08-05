@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AppContextProvider } from './context/AppContext';
-import ContextDemo from './components/ContextDemo';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import Menulist from './components/Menulist';
@@ -17,10 +17,8 @@ const App = () => {
   useEffect(fetchDemoData, []);
 
   return (
-    
     <AppContextProvider>
       <div id="demo">
-        
         {/* <h3>Hello from client/src/App.js</h3>
         <ContextDemo />
         <h3>{serverMessage}</h3> */}

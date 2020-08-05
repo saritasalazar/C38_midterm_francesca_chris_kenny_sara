@@ -24,7 +24,7 @@ const RandomDrink = ({data}) => {
    <h1  id="drinkname">{drinks.strDrink}</h1>
    
    <div className="randomBox">
-    <div>
+    <div className="button-container">
     
     <img id="randomdrink" src={drinks.strDrinkThumb} alt={drinks.strDrink}></img>
 
