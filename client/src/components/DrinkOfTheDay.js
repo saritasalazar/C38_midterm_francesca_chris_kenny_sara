@@ -1,40 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import Container from 'react-bootstrap/Container';
+import Container from 'react-bootstrap/Card';
 import axios from 'axios';
 import './DrinkPage.css';
+import { trackPromise } from 'react-promise-tracker';
+import LikeButton from './LikeButton'
 
 const DrinkOfTheDay = () => {
   const [drinks, setDrinks] = useState({});
 
   useEffect(() => {
+    trackPromise(
     axios
       .get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
       .then((response) => {
         console.log(response.data.drinks[0]);
         setDrinks(response.data.drinks[0]);
-      });
+      }));
   }, []);
 
   return (
     <Container>
-      <div class="randombox">
+        
         <h1 class="title">Cocktail of the Day</h1>
-        <h2 class="drinkname">{drinks.strDrink}</h2>
+        <div>
+        <h2 className="drinkname">{drinks.strDrink}</h2>
+        <div className="randomBox">
+       <div className="button-container">
         <img
-          class="randomdrink"
+          className="randomdrink"
           alt={drinks.strDrink}
-          style={{
-            float: 'left',
-            width: 300,
-            marginBottom: 20,
-            marginRight: 20
-          }}
           src={drinks.strDrinkThumb}
         />
-
-        <div class="recipe">
-          <h4>Recipe:</h4>
+           <LikeButton />
+           </div>
+        <div className="recipe">
+          <h4>Instructions:</h4>
           <p>{drinks.strInstructions}</p>
+          <h4>Ingredients:</h4>
           <p>
             {drinks.strMeasure1} {drinks.strIngredient1}
           </p>
@@ -57,6 +59,7 @@ const DrinkOfTheDay = () => {
             {drinks.strMeasure7} {drinks.strIngredient7}
           </p>
         </div>
+      </div>
       </div>
     </Container>
   );

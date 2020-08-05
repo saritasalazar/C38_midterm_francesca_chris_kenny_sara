@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import Logo from './Logo.png';
-
 const Footer = () => {
   return (
     <div className="main-footer">
@@ -9,9 +8,11 @@ const Footer = () => {
         <div className="row">
           {}
           <div className="col">
-            <img className="logo" width="150px" src={Logo} />
+            <a href={`/`}>
+              <img className="logo" width="150px" src={Logo} />{' '}
+            </a>
             <p>
-              <em> Let’s get litty with the right ingredients</em>{' '}
+              <em> Let's get litty with the right ingredients</em>{' '}
             </p>
             <ul className="list-unstyled"></ul>
             <li></li>
@@ -23,31 +24,36 @@ const Footer = () => {
             <h4>MENU</h4>
             <ul className="list-unstyled"></ul>
             <a href={`/DrinkOfTheDay`}>
-              <li>Cocktail of the Day</li>
+              <li className="brightblue">Cocktail of the Day</li>
             </a>
-            <a href={`/DrinkOfTheDay`}>
-              <li href="/">Virgin Drinks</li>
+            <a href={`/NonAlcoholic`}>
+              <li href="/"className="brightblue">Virgin Drinks</li>
             </a>
             <a href={`/AboutUs`}>
-              <li href="/AboutUs">About Us</li>
+              <li href="/AboutUs"className="brightblue">About Us</li>
             </a>
           </div>
           {}
           <div className="col">
-            <h4>Follow us</h4>
+            <h4>Follow us:</h4>
             <ul className="list-unstyled"></ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
+            <a href="https://www.facebook.com/wyncode/">
+              <li className="brightblue">Facebook</li>
+            </a>
+            <a href="https://www.instagram.com/wyncode">
+              <li className="brightblue">Instagram</li>
+            </a>
+            <a href="https://twitter.com/wyncode">
+              <li className="brightblue">Twitter</li>
+            </a>
           </div>
         </div>
         <br />
       </div>
       <div class="bottomtext">
-        COPY RIGHT | TERMS OF CONDITION |PRIVACY POLICY | GET YOUR DRINK ON
+        COPY RIGHT | TERMS OF CONDITION | PRIVACY POLICY | GET YOUR DRINK ON
       </div>
     </div>
   );
 };
-
 export default Footer;

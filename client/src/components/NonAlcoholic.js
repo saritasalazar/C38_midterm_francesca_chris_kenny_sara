@@ -2,16 +2,18 @@ import React from 'react';
 import Axios from 'axios';
 import { Container,Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import { trackPromise } from 'react-promise-tracker';
 
 const NonAlcoholic = () => {
     const [ApiData,setApiData] = React.useState([]);
 
     React.useEffect(() => {
+      trackPromise(
         Axios.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic`)
         .then((response) => {
             console.log(response.data.drinks);
             setApiData(response.data.drinks)
-        });
+        }));
     },[]);
 
     return (

@@ -10,6 +10,7 @@ import Drink from './Drink';
 import Footer from './Footer';
 
 import ButtonRandom from './RandomButton';
+import ThreeDotsWave from './ThreeDotsWave';
 
 
 const Menulist = () => {
@@ -18,6 +19,7 @@ const Menulist = () => {
       <NavBar />
       <br />
       <Container>
+        <ThreeDotsWave />
         <Switch>
           <Route exact path = "/random" component={ButtonRandom}/> 
           <Route exact path="/DrinkOfTheDay" component={DrinkOfTheDay} />

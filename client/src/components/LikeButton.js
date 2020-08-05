@@ -10,17 +10,12 @@ const LikeButton =() => {
     }
     
     return(
-    
-        <button id="likeme" onClick={addLike}>Like me ❤️     {likes}</button>
-     
+        <div>
+        <button id="likeme" onClick={addLike}> ❤️ {likes}</button>
+     </div>
     )
 }
 
-
-
-// Be sure each item in your index/gallery/list has a unique key in its parent html element (div, li, etc) — key={item.id}
-// Pass that id in as a prop when you are rendering the button component — <LikeButton itemId={item.id} />
-// Add the id to the button — <button onClick={this.addLike} id={this.props.itemId}>Likes: {this.state.likes} </button>
 
 
 export default LikeButton; 

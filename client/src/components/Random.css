@@ -45,12 +45,13 @@
 
     #recipe {
         flex:display;
-        width: 75%;
+        width: 600px;
         height: 500px;
         padding-right: 20px;
         padding-left: 20px;
         margin-right: 20px;
         margin-left: 20px;
+       
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
        
     }
@@ -74,7 +75,7 @@
     }
 
   .specialbutton:hover{
-        background-color: pink;
+        background-color: #E800C6;
     
     }
     
@@ -87,13 +88,17 @@
 
     }
 
-
 /* Like me button style need to fix this - change styling*/
     #likeme{
-
-        background-color:aquamarine;
+        position: absolute;
+        top: 70%;
+        left: 37%;
+        background-color: transparent;
         color:white;
-        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
         margin-top: 20px;
         margin-bottom: 10px;
         margin-left: 20px;
@@ -104,4 +109,24 @@
         outline: none;
 
     }
+
+    #likeme:hover{
+        background-color:aquamarine; 
+
+    }
+    
    
+    .centerme{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+
+
+
+/* style  the like me button over the drink picture */
+  .buttoncontainer {
+  position: relative;
+  width: 50%;
+  }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import axios from "axios";
 import RandomDrink from "./RandomDrink";
 import './Random.css';
+import { trackPromise } from 'react-promise-tracker';
 
 
 const ButtonRandom = () => {
@@ -17,12 +17,13 @@ const ButtonRandom = () => {
     }
 
     React.useEffect(() => {
-        axios.get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
+      trackPromise(  
+      axios.get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
             .then((response) => {
                 setApiData(response.data.drinks);
                 console.log(apiData)
                 
-            })
+            }));
     }, [count])
 
     return(
