@@ -24,27 +24,27 @@ const Footer = () => {
             <h4>MENU</h4>
             <ul className="list-unstyled"></ul>
             <a href={`/DrinkOfTheDay`}>
-              <li>Cocktail of the Day</li>
+              <li className="brightblue">Cocktail of the Day</li>
             </a>
             <a href={`/NonAlcoholic`}>
-              <li href="/">Virgin Drinks</li>
+              <li href="/"className="brightblue">Virgin Drinks</li>
             </a>
             <a href={`/AboutUs`}>
-              <li href="/AboutUs">About Us</li>
+              <li href="/AboutUs"className="brightblue">About Us</li>
             </a>
           </div>
           {}
           <div className="col">
-            <h4>Follow us</h4>
+            <h4>Follow us:</h4>
             <ul className="list-unstyled"></ul>
             <a href="https://www.facebook.com/wyncode/">
-              <li>Facebook</li>
+              <li className="brightblue">Facebook</li>
             </a>
-            <a href="www.instagram.com/wyncode">
-              <li>Instagram</li>
+            <a href="https://www.instagram.com/wyncode">
+              <li className="brightblue">Instagram</li>
             </a>
             <a href="https://twitter.com/wyncode">
-              <li>Twitter</li>
+              <li className="brightblue">Twitter</li>
             </a>
           </div>
         </div>

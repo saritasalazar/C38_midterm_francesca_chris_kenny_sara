@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Card';
 import axios from 'axios';
 import './DrinkPage.css';
 import { trackPromise } from 'react-promise-tracker';
+import LikeButton from './LikeButton'
 
 const DrinkOfTheDay = () => {
   const [drinks, setDrinks] = useState({});
@@ -24,14 +25,16 @@ const DrinkOfTheDay = () => {
         <div>
         <h2 className="drinkname">{drinks.strDrink}</h2>
         <div className="randomBox">
+       <div className="button-container">
         <img
           className="randomdrink"
           alt={drinks.strDrink}
           src={drinks.strDrinkThumb}
         />
-
+           <LikeButton />
+           </div>
         <div className="recipe">
-          <h4>Recipe:</h4>
+          <h4>Instructions:</h4>
           <p>{drinks.strInstructions}</p>
           <h4>Ingredients:</h4>
           <p>

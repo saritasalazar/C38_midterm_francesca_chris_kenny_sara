@@ -33,7 +33,7 @@ const RandomDrink = ({data}) => {
     </div>
 
     <div id="recipe">
-       <h2>RECIPE:</h2>
+       
        <h4>Instructions:</h4>
       <p>{drinks.strInstructions}</p>
       <h4>Ingredients:</h4>
