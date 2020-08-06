@@ -20,7 +20,7 @@ const teamData = [
     name: 'Sara',
     image: saraImg,
     description:
-      "Hi my name is Sara Salazar. Forget long walks on the beach, I'd rather be drinking excessive amounts of coffee, writing code, playing my ukulele, or surfing on the west coast."
+      "Hi my name is Sara Salazar! Forget long walks on the beach, I'd rather be drinking excessive amounts of coffee, writing code, playing my ukulele, or surfing on the west coast."
   },
   {
     name: 'Francesca',
