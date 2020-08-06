@@ -1,0 +1,66 @@
+.hero1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  min-height: 20rem;
+  background-color: white;
+  overflow: hidden;
+}
+/*******************************
+      Central icon and text
+    ********************************/
+.icon-holder1 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  padding: 3rem;
+  margin: 2rem;
+  height: 19rem;
+}
+.icon-holder__icon1 {
+  position: absolute;
+  width: 16rem;
+  bottom: 13em;
+}
+.icon-holder__icon1 img {
+  max-width: 100%;
+}
+/*******************************
+      Face images
+    ********************************/
+.face-image {
+  position: absolute;
+}
+.face img {
+  max-width: 100%;
+}
+.face__one {
+  left: 2em;
+  width: 30vw;
+  bottom: 2em;
+  max-width: 550px;
+}
+.face__two {
+  right: 15em;
+  width: 30vw;
+  bottom: 2em;
+  max-width: 300px;
+}
+.face__three {
+  bottom: 2em;
+  right: -2em;
+  width: 20vw;
+  max-width: 290px;
+}
+.face__four {
+  bottom: 2em;
+  left: 20em;
+  width: 20vw;
+  max-width: 290px;
+}

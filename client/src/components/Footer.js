@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import Logo from './Logo.png';
+import Logo from './Photos/Logo/Logo.png';
 const Footer = () => {
   return (
     <div className="main-footer">
@@ -12,7 +12,7 @@ const Footer = () => {
               <img className="logo" width="150px" src={Logo} />{' '}
             </a>
             <p>
-              <em> Let's get litty with the right ingredients</em>{' '}
+              <em> Let's get litty with the right ingredients!</em>{' '}
             </p>
             <ul className="list-unstyled"></ul>
             <li></li>
@@ -21,16 +21,20 @@ const Footer = () => {
           </div>
           {}
           <div className="col">
-            <h4>MENU</h4>
+            <h4>Menu</h4>
             <ul className="list-unstyled"></ul>
             <a href={`/DrinkOfTheDay`}>
               <li className="brightblue">Cocktail of the Day</li>
             </a>
             <a href={`/NonAlcoholic`}>
-              <li href="/"className="brightblue">Virgin Drinks</li>
+              <li href="/" className="brightblue">
+                Virgin Drinks
+              </li>
             </a>
             <a href={`/AboutUs`}>
-              <li href="/AboutUs"className="brightblue">About Us</li>
+              <li href="/AboutUs" className="brightblue">
+                About Us
+              </li>
             </a>
           </div>
           {}
