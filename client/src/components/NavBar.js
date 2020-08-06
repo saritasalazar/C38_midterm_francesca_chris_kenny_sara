@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
-import Logo from './Logo.png';
+import Logo from './Photos/Logo/Logo.png';
 
 const NavBar = () => {
   return (
@@ -11,7 +11,7 @@ const NavBar = () => {
         </Nav.Link>
       </Nav.Item>
 
-      <Nav.Item as="li">    
+      <Nav.Item as="li">
         <Nav.Link
           style={{ color: '#black' }}
           href="/DrinkOfTheDay"
@@ -22,14 +22,18 @@ const NavBar = () => {
       </Nav.Item>
 
       <Nav.Item as="li">
-        <Nav.Link style={{ color: '#black' }} href="/AboutUs" eventKey="link-2">
-          <strong>About Us</strong>
+        <Nav.Link
+          style={{ color: '#black' }}
+          href="/NonAlcoholic"
+          eventKey="link-2"
+        >
+          <strong>Virgin Drinks</strong>
         </Nav.Link>
       </Nav.Item>
 
       <Nav.Item as="li">
-        <Nav.Link style={{ color: '#black' }} href="/NonAlcoholic" eventKey="link-3">
-          <strong>Virgin Drinks</strong>
+        <Nav.Link style={{ color: '#black' }} href="/AboutUs" eventKey="link-3">
+          <strong>About Us</strong>
         </Nav.Link>
       </Nav.Item>
     </Nav>

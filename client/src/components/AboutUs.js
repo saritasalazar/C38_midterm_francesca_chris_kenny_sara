@@ -7,38 +7,39 @@ import chrisImg from '../Images/christopherfalcon.jpg';
 import saraImg from '../Images/Sara_Salazar.jpg';
 import francescaImg from '../Images/IMG_5673.jpg';
 import kennyImg from '../Images/IMG_0455.jpg';
+import FaceBanner from './FaceBanner';
 
 const teamData = [
   {
     name: 'Chris',
     image: chrisImg,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dui vivamus arcu felis bibendum. Amet aliquam id diam maecenas ultricies mi.'
+      'Hello my name is Christopher Falcon, I am 21 years old, born and raise in Hialeah, Florida. I graduated Miami-Dade college with an associate degree and currently attending Florida International University majoring in Computer Science.'
   },
   {
     name: 'Sara',
     image: saraImg,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Leo urna molestie at elementum eu facilisis.'
+      "Hi my name is Sara Salazar. Forget long walks on the beach, I'd rather be drinking excessive amounts of coffee, writing code, playing my ukulele, or surfing on the west coast."
   },
   {
     name: 'Francesca',
     image: francescaImg,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus viverra. Tellus molestie nunc non blandit massa.'
+      'My name is Francesca Marquez, the things that I enjoy most are traveling to distant lands connecting to cultures and exploring their lifestyles. Separating from the crowd and seeing angles unseen of far away savanna’s, smells of earth and food sounds of the city that gets unnoticed by everyday people.'
   },
   {
     name: 'Kenny',
     image: kennyImg,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non sodales neque sodales. Sit amet nulla facilisi morbi.'
+      'I’m a U.S. Veteran, that proudly served and loved almost every minute of it. People always ask me what I missed most and I rarely reply. But what I miss most is those cool desert nights driving in a unknown country in imminent danger with a truck full of ammo and a case full of liquor and smoking a Cuban Monte Cristo cigar with my squad listening to Notorious Big. The motto was kind of cool too, Nightstalkers Don’t Quit.'
   }
 ];
 function AboutUs() {
   const [members] = useState(teamData);
   return (
     <div>
-      <h1>About Get Litty Squad</h1>
+      <FaceBanner />
       <Container>
         <Row>
           {members.map((member, index) => (

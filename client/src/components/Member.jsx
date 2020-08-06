@@ -11,7 +11,6 @@ function Member({ info }) {
       <Card.Body>
         <Card.Title>{info.name}</Card.Title>
         <Card.Text>{info.description}</Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
       </Card.Body>
     </Card>
   );

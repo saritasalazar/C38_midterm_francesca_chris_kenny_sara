@@ -1,132 +1,113 @@
-
 /* Notes to self: 
 -Change Ingredient text size so it doesn't spill out of the box for drinks with longer lists
 -Style the like button
 -Don't foget to change the URL for the share buttons 
 */
 
-
-
 /* main container */
 
 .randomBox {
-    display: flex;
-    padding: 15px;
-    margin-bottom: 50px;
-    height: 600px;
-    
-    
+  display: flex;
+  padding: 15px;
+  margin-bottom: 50px;
+  height: 600px;
 }
-
 
 /* Drink title/name */
 
-    #drinkname{
-         font-weight: bold;
-         color: black;
-         margin-left:35px;
-         margin-top: 20px;
-         padding-top: 20px;
-        
- 
-    }
-    
-    /* style the image */
-    #randomdrink{
-        width:500px;
-        height:500px;
-        margin-left:20px;
-        float:left;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    
-  /*style recipe card*/
+#drinkname {
+  font-weight: bold;
+  color: black;
+  margin-left: 35px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
 
-    #recipe {
-        flex:display;
-        width: 600px;
-        height: 500px;
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
-       
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
-       
-    }
-    
+/* style the image */
+#randomdrink {
+  width: 500px;
+  height: 500px;
+  margin-left: 20px;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*style recipe card*/
+
+#recipe {
+  flex: display;
+  width: 600px;
+  height: 500px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
 /*button style*/
 
-    .specialbutton{
-        background-color:aquamarine;
-        color:white;
-        padding-left: 20px;
-        padding-right:20px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        border: 1px solid white;
-        font-size: 25px;
-        border-radius: 25px;
-        transition-duration: 0.4s;
-        outline: none;
-        
-       
-    }
+.specialbutton {
+  background-color: aquamarine;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border: 1px solid white;
+  font-size: 25px;
+  border-radius: 25px;
+  transition-duration: 0.4s;
+  outline: none;
+}
 
-  .specialbutton:hover{
-        background-color: #E800C6;
-    
-    }
-    
-    
-    .share-buttons  {
-        float: right; 
-        border: black;
-        color:white;
+.specialbutton:hover {
+  background-color: #e800c6;
+}
 
-
-    }
+.share-buttons {
+  float: right;
+  border: black;
+  color: white;
+}
 
 /* Like me button style need to fix this - change styling*/
-    #likeme{
-        position: absolute;
-        top: 70%;
-        left: 37%;
-        background-color: transparent;
-        color:white;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        margin-left: 20px;
-        border: 1px solid white;
-        font-size: 20px;
-        border-radius: 25px;
-        transition-duration: 0.4s;
-        outline: none;
+#likeme {
+  position: absolute;
+  top: 70%;
+  left: 37%;
+  background-color: transparent;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 1px solid white;
+  font-size: 20px;
+  border-radius: 25px;
+  transition-duration: 0.4s;
+  outline: none;
+}
 
-    }
+#likeme:hover {
+  background-color: aquamarine;
+}
 
-    #likeme:hover{
-        background-color:aquamarine; 
-
-    }
-    
-   
-    .centerme{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-    }
-
-
+.centerme {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
 
 /* style  the like me button over the drink picture */
-  .buttoncontainer {
+.buttoncontainer {
   position: relative;
   width: 50%;
-  }
+}
