@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useCycle } from 'framer-motion';
 import ImageHolder from './ImageHolder';
 import IconHolder from './IconHolder';
-import { drinkScene } from './scenes';
+import { drinkScene } from '../data/scenes';
 import './banner.css';
 
 const SLIDE_CHANGE_TIME_MS = 5000;

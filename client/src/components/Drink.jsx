@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Card';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import './DrinkPage.css';
+import '../pages/DrinkPage.css';
 import { trackPromise } from 'react-promise-tracker';
 import LikeButton from './LikeButton';
 import SharingButtons from './SharingButtons';

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useCycle } from 'framer-motion';
 import FImageHolder from './FImageHolder';
 import FIconHolder from './FIconHolder';
-import { faceScene } from './scenes';
+import { faceScene } from '../data/scenes';
 import './FaceBanner.css';
+
 const SLIDE_CHANGE_TIME_MS = 5000;
 function FaceBanner() {
   const [currentFScene, setCurrentFScene] = useCycle(faceScene);

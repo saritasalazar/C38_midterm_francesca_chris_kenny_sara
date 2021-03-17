@@ -3,7 +3,6 @@ import { Facebook, Twitter } from 'react-sharingbuttons';
 import 'react-sharingbuttons/dist/main.css';
 import './Random.css';
 
-//we need to replace the URL below with our heroku URL once deployed
 
 const SharingButtons = () => {
   const url = 'https://get-litty-app.herokuapp.com/';

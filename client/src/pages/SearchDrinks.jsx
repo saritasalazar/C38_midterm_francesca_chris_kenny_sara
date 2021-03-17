@@ -2,9 +2,9 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import axios from 'axios';
 import AllRecipes from './AllRecipes';
-import RandomHomePageButton from './RandomHomePageButton';
+import RandomHomePageButton from '../components/RandomHomePageButton';
 import { trackPromise } from 'react-promise-tracker';
-import Banner from './Banner';
+import Banner from '../components/Banner';
 
 const SearchDrinks = () => {
   const [apiData, setApiData] = React.useState([]);

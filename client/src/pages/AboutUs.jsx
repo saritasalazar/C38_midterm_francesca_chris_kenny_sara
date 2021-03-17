@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Member from './Member';
+import Member from '../components/Member';
 import chrisImg from '../Images/christopherfalcon.jpg';
 import saraImg from '../Images/Sara_Salazar.jpg';
 import francescaImg from '../Images/IMG_5673.jpg';
 import kennyImg from '../Images/IMG_0455.jpg';
-import FaceBanner from './FaceBanner';
+import FaceBanner from '../components/FaceBanner';
 
 const teamData = [
   {

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import RandomDrink from './RandomDrink';
-import './Random.css';
+import RandomDrink from '../components/RandomDrink';
+import '../components/Random.css';
 import { trackPromise } from 'react-promise-tracker';
 
 const ButtonRandom = () => {

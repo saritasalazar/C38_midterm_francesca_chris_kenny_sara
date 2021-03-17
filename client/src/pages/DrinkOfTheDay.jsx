@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Card';
 import axios from 'axios';
 import './DrinkPage.css';
 import { trackPromise } from 'react-promise-tracker';
-import LikeButton from './LikeButton';
-import SharingButtons from './SharingButtons';
+import LikeButton from '../components/LikeButton';
+import SharingButtons from '../components/SharingButtons';
 
 const DrinkOfTheDay = () => {
   const [drinks, setDrinks] = useState({});
