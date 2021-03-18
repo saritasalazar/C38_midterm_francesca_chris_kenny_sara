@@ -7,7 +7,7 @@ const NavBar = () => {
     <Nav style={{ backgroundColor: 'black' }} defaultActiveKey="/home" as="ul">
       <Nav.Item as="li">
         <Nav.Link style={{ color: '#fff' }} href="/">
-          <img width="70px" src={Logo} />
+          <img width="70px" alt="logo" src={Logo} />
         </Nav.Link>
       </Nav.Item>
 

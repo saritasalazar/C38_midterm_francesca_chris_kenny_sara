@@ -11,7 +11,7 @@ const LikeButton =() => {
     
     return(
         <div>
-        <button id="likeme" onClick={addLike}> ❤️ {likes}</button>
+        <button id="likeme" onClick={addLike}> <span role="img" aria-label="heart">❤️ </span>{likes}</button>
      </div>
     )
 }

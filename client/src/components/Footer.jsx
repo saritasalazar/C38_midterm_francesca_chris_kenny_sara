@@ -9,7 +9,7 @@ const Footer = () => {
           {}
           <div className="col">
             <a href={`/`}>
-              <img className="logo" width="150px" src={Logo} />{' '}
+              <img className="logo" width="150px" alt="logo" src={Logo} />{' '}
             </a>
             <p>
               <em> Let's get litty with the right ingredients!</em>{' '}

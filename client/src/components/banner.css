@@ -65,14 +65,15 @@
 /*******************************
       Responsive changes
     ********************************/
-@media screen and (max-width: 876px) {
+/* @media only screen and (max-width: 876px) {
   .hero {
     height: 70vh;
   }
+
   /*******************************
         Icon and text cover
       ********************************/
-  .icon-holder {
+/* .icon-holder {
     width: 100%;
     height: 100%;
     justify-content: flex-end;
@@ -81,11 +82,11 @@
     top: auto;
     bottom: 7rem;
     max-width: 10rem;
-  }
-  /*******************************
+  } */
+/*******************************
         Reposition images
       ********************************/
-  .drink__one {
+/* .drink__one {
     top: -5rem;
     width: 80vw;
   }
@@ -97,5 +98,11 @@
     bottom: auto;
     right: -5rem;
     width: 50vw;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  .hero {
+    display: none;
   }
 }

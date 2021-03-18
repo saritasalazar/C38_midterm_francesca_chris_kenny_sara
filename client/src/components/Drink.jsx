@@ -22,7 +22,7 @@ const Drink = () => {
           setDrinks(response.data.drinks[0]);
         })
     );
-  }, []);
+  });
 
   return (
     <Container>

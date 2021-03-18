@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { trackPromise } from 'react-promise-tracker';
 
