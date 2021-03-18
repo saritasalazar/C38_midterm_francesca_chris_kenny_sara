@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Member from '../components/Member';
-import chrisImg from '../Images/christopherfalcon.jpg';
-import saraImg from '../Images/Sara_Salazar.jpg';
-import francescaImg from '../Images/IMG_5673.jpg';
-import kennyImg from '../Images/IMG_0455.jpg';
+import chrisImg from '../Photos/Images/christopherfalcon.jpg';
+import saraImg from '../Photos/Images/Sara_Salazar.jpg';
+import francescaImg from '../Photos/Images/IMG_5673.jpg';
+import kennyImg from '../Photos/Images/IMG_0455.jpg';
 import FaceBanner from '../components/FaceBanner';
 
 const teamData = [
